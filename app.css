@@ -1,53 +1,74 @@
 body {
-  font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
+  font-family: "oldtown";
   background-color: rgb(250, 240, 230);
-  background-image: url("./images/background-img.jpg");
+  background-image: url("./images/background-image-2.jpg");
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
   text-align: center;
   font-size: 2em;
-  margin-bottom:0px;
+  margin: 0;
+  font-family: "noto";
 }
 
-img {
-  width: 600px;
-  border-radius: 20px;
-  border: solid rgb(192, 165, 140);
+.img-lasagna {
+  width: 350px;
+  border-radius: 5px;
+  border: solid black;
+  border-width: thin;
+}
+
+.img-timer {
+  width: 25px;
+}
+
+header {
+  background-color: #d9b99b;
+  padding: 0px 0px 5px 0px;
+  margin: 0px 238px 0px 238px;
+  margin-bottom: 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+span {
+  padding-left: 65px;
+  text-align: center;
 }
 
 /* -------------------------------------------------- GRID CONTAINERS -------------------------------------------------- */
 
 .grid-container {
   display: grid;
-  grid-template-columns: 2fr 10fr 2fr;
+  grid-template-columns: 1fr 8fr 4fr 1fr;
   padding: 10px;
 }
 
 .grid-container-head {
   display: grid;
-  grid-template-columns: 2fr 10fr 2fr 2fr;
+  grid-template-columns: 2fr 7fr 2fr;
   padding: 10px;
 }
 
 /* ---------------------------------------------------- GRID ITEMS ---------------------------------------------------- */
 
 .grid-container-head > .grid-items {
-  background-color: rgb(217, 185, 155);
+  background-color: #d9b99b;
   padding: 20px;
   margin-bottom: 0px;
   text-align: center;
 }
 
 .grid-container > .grid-items {
-  background-color: rgb(217, 185, 155);
+  background-color: #fff0db;
   padding: 20px;
   margin-bottom: 0px;
   text-align: left;
 }
 .grid-container > .second-item {
-  background-color: rgb(238, 217, 196);
+  background-color: #d9b99b;
 }
 
 /* ---------------------------------------------------- BORDERS ---------------------------------------------------- */
@@ -55,7 +76,6 @@ img {
 .borders-left {
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  
 }
 
 .borders-right {
@@ -68,5 +88,3 @@ img {
 li {
   padding-bottom: 7px;
 }
-
- 
