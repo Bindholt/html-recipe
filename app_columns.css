@@ -20,17 +20,21 @@ h1 {
   border-width: thin;
 }
 
-.icon {
+.img-timer {
   width: 25px;
 }
 
 header {
   background-color: #d9b99b;
+  padding: 0px 0px 5px 0px;
+  margin: 0px 238px 0px 238px;
+  margin-bottom: 25px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
 span {
+  padding-left: 65px;
   text-align: center;
 }
 
@@ -38,77 +42,32 @@ span {
 
 .grid-container {
   display: grid;
-  grid-template-areas: "header-left header-left header header header header header header header header header header header header header header header header header-right header-right"
-  "intro-left intro-left intro-left intro-left intro intro intro intro intro intro intro intro intro intro intro intro intro-right intro-right intro-right intro-right"
-  "recipe-left recipe-left recipe recipe recipe recipe recipe recipe recipe recipe recipe recipe-right ingredients ingredients ingredients ingredients ingredients ingredients ingredients-right ingredients-right";
-  grid-auto-columns: minmax(0, 1fr);
-  grid-auto-flow: column;
+  grid-template-columns: 1fr 8fr 4fr 1fr;
+  padding: 10px;
+}
+
+.grid-container-head {
+  display: grid;
+  grid-template-columns: 2fr 7fr 2fr;
+  padding: 10px;
 }
 
 /* ---------------------------------------------------- GRID ITEMS ---------------------------------------------------- */
 
-#header {
-  grid-area: header;
-  display: grid;
-  grid-template-columns: 2fr 2fr 3fr;
-}
-
-#intro {
-  grid-area: intro;
-  text-align: center;
-  margin-top: 40px;
-}
-
-#recipe {
-  grid-area: recipe;
-  margin-top: 25px;
-  padding-left: 10px;
-}
-
-#ingredients {
-  grid-area: ingredients;
-  margin-top: 25px;
-  padding-left: 10px;
-}
-
-#header-left {
-  grid-area: header-left;
-}
-
-#intro-left {
-  grid-area: intro-left;
-}
-
-#intro-right {
-  grid-area: intro-right;
-}
-
-#recipe-left {
-  grid-area: recipe-left;
-}
-
-#recipe-right {
-  grid-area: recipe-right;
-}
-
-#ingredients-right {
-  grid-area: ingredients-right;
-}
-
-
-
 .grid-container-head > .grid-items {
   background-color: #d9b99b;
+  padding: 20px;
   margin-bottom: 0px;
   text-align: center;
 }
 
 .grid-container > .grid-items {
   background-color: #fff0db;
+  padding: 20px;
   margin-bottom: 0px;
   text-align: left;
 }
-.grid-container > .second-color {
+.grid-container > .second-item {
   background-color: #d9b99b;
 }
 

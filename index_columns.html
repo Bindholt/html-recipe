@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christians Lasagne</title>
-    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="app_columns.css" />
     <link
       rel="shortcut icon"
       href="./images/favicon-lasagna.jpg"
@@ -17,24 +17,24 @@
       <a href="/html/">Navigation</a> | <a href="/js/">Her</a> |
       <a href="/python/">Oppe</a>
     </nav> -->
-    <main class="grid-container">
-      <div id="header-left"></div>
-      <header id="header">
-        <span>
-          6 timer <img class="icon" src="./images/meal.png" alt="" />
-        </span>
-        <span>
-          6 personer <img class="icon" src="./images/user.png" alt="" />
-        </span>
-        <span>
-          sværhedsgræd <img class="icon" src="./images/star.png" alt="" />
-          <img class="icon" src="./images/star.png" alt="" />
-          <img class="icon" src="./images/star-empty.png" alt="" />
-        </span>
-      </header>
-      <div id="header-right"></div>
-      <div id="intro-left"></div>
-      <article id="intro" class="grid-items borders-left borders-right second-color">
+    <header>
+      <span>
+        6 timer <img class="img-timer" src="./images/meal.png" alt="" />
+      </span>
+      <span> | </span>
+      <span>
+        6 personer <img class="img-timer" src="./images/user.png" alt="" />
+      </span>
+      <span> | </span>
+      <span>
+        sværhedsgræd <img class="img-timer" src="./images/star.png" alt="" />
+        <img class="img-timer" src="./images/star.png" alt="" />
+        <img class="img-timer" src="./images/star-empty.png" alt="" />
+      </span>
+    </header>
+    <section class="grid-container-head">
+      <article></article>
+      <article class="grid-items borders-left borders-right">
         <h1>Lasagne</h1>
         <br />
         <img class="img-lasagna" src="./images/Lasagne.jpg" />
@@ -66,9 +66,11 @@
           smage lære hinanden at kende.
         </p>
       </article>
-      <div id="intro-right"></div>
-      <div id="recipe-left"></div>
-      <article id="recipe" class="grid-items second-color borders-left borders-right">
+      <article></article>
+    </section>
+    <section class="grid-container">
+      <article></article>
+      <article class="grid-items second-item borders-left">
         <h2>Sådan gør du</h2>
         <h3>Kødsovsen</h3>
         <ol>
@@ -172,8 +174,7 @@
           </li>
         </ol>
       </article>
-      <div id="recipe-right"></div>
-      <article id="ingredients" class="grid-items borders-left borders-right">
+      <article class="grid-items borders-right">
         <h2>Ingredienser</h2>
         <h3>Kødsovs</h3>
         <ul>
@@ -207,8 +208,9 @@
           <li>50g revet mozerella</li>
         </ul>
       </article>
-      <div id="ingredients-right"></div>
-  </main>
+      <article></article>
+    </section>
+
     <footer>
       meal.png made by Smashicons | user.png made by Freepik | star.png made by
       mim_studio | star-empty.png made by Ilham Fitrotul Hayat
